@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.cxcs.manger.mapper")
+@MapperScan(basePackages = "com.cxcs.manger.dao")
 public class MangerApplication {
 
     public static void main(String[] args) {
