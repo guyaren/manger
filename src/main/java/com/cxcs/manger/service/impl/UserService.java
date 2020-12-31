@@ -4,15 +4,19 @@ import com.cxcs.manger.entity.User;
 import com.cxcs.manger.dao.UserDao;
 import com.cxcs.manger.service.IUserService;
 import com.cxcs.manger.vo.CommonResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+
 @Service
 public class UserService implements IUserService {
     @Autowired
     private UserDao userDao;
-
+    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
     @Override
     public CommonResponse<List<User>> getAllUsers() {
